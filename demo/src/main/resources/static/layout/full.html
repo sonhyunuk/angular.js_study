@@ -1,0 +1,12 @@
+<div id="wrapper">
+    <div ng-include="'/layout/sidebar.html'"></div>
+    <div id="content-wrapper">
+        <div ng-include="'/layout/topbar.html'"></div>
+        <div class="container-fluid">
+
+            <ui-view></ui-view>
+        </div>
+        <!-- /.conainer-fluid -->
+        <div ng-include="'/layout/footer.html'"></div>
+    </div>
+</div>

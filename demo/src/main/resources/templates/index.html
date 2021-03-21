@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +10,28 @@
     <!-- angular.js script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+   
+
     <script src="../common/js/ocLazyLoad.js"></script>
     <script src="../common/js/angular-js/app.js"></script>
     <script src="../common/js/angular-js/route.js"></script>
 
-    
+
 
 
     <!-- css -->
     <link rel="stylesheet" href="../common/css/sb-admin-2.min.css">
     <link href="../common/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link  href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
-
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <title>angular연습</title>
 </head>
+
 <body ng-app="app" id="page-top">
     <a class="nav-link" ui-sref-active="active" id="hidebtn" ui-sref="app.components" onclick="hideBtn()"></i> 화면띄우기</a>
     <ui-view></ui-view>
-    
+
 
     <!-- Bootstrap core JavaScript-->
     <script src="../common/vendor/jquery/jquery.min.js"></script>
@@ -38,12 +43,16 @@
     <!-- Custom scripts for all pages-->
     <script src="../common/js/sb-admin-2.min.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
 
 </body>
+
 </html>
 <script>
-function hideBtn(){
-    console.log('gg')
-document.getElementById("hidebtn").style.display = "none";
-}
+    function hideBtn() {
+        console.log('gg')
+        document.getElementById("hidebtn").style.display = "none";
+    }
 </script>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
 
 <head>
     <meta charset="utf-8">
@@ -10,8 +10,10 @@
     <!-- angular.js script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
-   
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+</script>   
 
     <script src="../common/js/ocLazyLoad.js"></script>
     <script src="../common/js/angular-js/app.js"></script>
@@ -28,7 +30,7 @@
     <title>angular연습</title>
 </head>
 
-<body ng-app="app" id="page-top">
+<body  id="page-top">
     <a class="nav-link" ui-sref-active="active" id="hidebtn" ui-sref="app.components" onclick="hideBtn()"></i> 화면띄우기</a>
     <ui-view></ui-view>
 

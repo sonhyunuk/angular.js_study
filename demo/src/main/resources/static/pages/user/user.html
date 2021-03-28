@@ -1,28 +1,10 @@
 <div class="row">
-  <div class="large-6 columns">
-    <label for="start">Start Date</label>
-    <input id="start" type="date" /><br />
-  </div>
-  <div class="large-6 columns">
-    <label for="end">End Date</label>
-    <input id="end" type="date" /><br />
-  </div>
-</div>
-<div class="row">
-  <div class="large-12 columns">
-    <button class="button radius" id="filter">Filter</button>
-    <button id="clearFilter" class="button radius secondary">Clear Filter</button>
-  </div>
-</div>
-<div class="row">
-  <div class="large-12 columns">
-    <table ng-controller="ngController">
+    <table ng-controller="ngController" class="table">
       <tbody>
-        <tr ng-repeat="data in arrData">
-          <td>{{ data.id }}</td>
-          <td>{{ data.name }}</td>
+        <tr ng-repeat="tmp in list">
+          <td>{{tmp.userNum}}</td>
+          <td>{{tmp.userId}}</td>
         </tr>
       </tbody>
-
-  </div>
+</table>
 </div>
